@@ -330,6 +330,11 @@ function uploadBellyPhoto(week) {
     input.click();
 }
 
+// 注册 Service Worker
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js').catch(() => {});
+}
+
 // 页面加载时执行
 document.addEventListener('DOMContentLoaded', function() {
     initTheme();
