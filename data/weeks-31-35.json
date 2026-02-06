@@ -1,0 +1,49 @@
+{
+  "weeks": [
+    {
+      "week": 31,
+      "size": "椰子",
+      "sizeEmoji": "🥥",
+      "length": "41cm",
+      "development": "五感发育完成",
+      "babyActivity": "我能看、听、闻、尝、摸，全都会了！",
+      "momTips": "可能感到呼吸困难"
+    },
+    {
+      "week": 32,
+      "size": "哈密瓜",
+      "sizeEmoji": "🍈",
+      "length": "42cm",
+      "development": "指甲长到指尖",
+      "babyActivity": "我的小指甲长好了，可以挠痒痒！",
+      "momTips": "准备待产包"
+    },
+    {
+      "week": 33,
+      "size": "菠萝",
+      "sizeEmoji": "🍍",
+      "length": "44cm",
+      "development": "骨骼变硬但头骨仍柔软",
+      "babyActivity": "我的骨头变硬了，但头还是软的方便出生！",
+      "momTips": "注意胎位"
+    },
+    {
+      "week": 34,
+      "size": "甜瓜",
+      "sizeEmoji": "🍈",
+      "length": "45cm",
+      "development": "肺部接近成熟",
+      "babyActivity": "我的肺快准备好了，等着呼吸第一口气！",
+      "momTips": "可能出现假性宫缩"
+    },
+    {
+      "week": 35,
+      "size": "蜜瓜",
+      "sizeEmoji": "🍈",
+      "length": "46cm",
+      "development": "大部分器官发育完成",
+      "babyActivity": "我基本准备好了，就等着见妈妈！",
+      "momTips": "每周产检"
+    }
+  ]
+}

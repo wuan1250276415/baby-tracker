@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今天宝宝在干嘛 💕</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>今天宝宝在干嘛 💕</h1>
+            <p class="subtitle">记录我们的小生命成长</p>
+        </header>
+        
+        <div class="countdown-card">
+            <div class="countdown-number" id="daysLeft">--</div>
+            <div class="countdown-label">天后见面</div>
+        </div>
+
+        <div class="baby-card">
+            <div class="week-badge">
+                <span>第</span>
+                <span class="week-number" id="currentWeek">-</span>
+                <span>周</span>
+            </div>
+            
+            <div class="size-display">
+                <div class="size-emoji" id="sizeEmoji">🍒</div>
+                <div class="size-text">宝宝现在像 <span id="sizeText">--</span></div>
+                <div class="size-length">身长约 <span id="babyLength">--</span></div>
+            </div>
+
+            <div class="baby-says">
+                <div class="speech-bubble">
+                    <p id="babyActivity">加载中...</p>
+                </div>
+                <div class="baby-avatar">👶</div>
+            </div>
+        </div>
+
+        <div class="mom-card">
+            <h3>💝 给妈妈的提示</h3>
+            <p id="momTips">加载中...</p>
+        </div>
+
+        <div class="love-card">
+            <h3>💌 爸爸的话</h3>
+            <p id="dadMessage">老婆辛苦了，爱你们！</p>
+        </div>
+
+        <div class="progress-section">
+            <h3>孕期进度</h3>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text" id="progressText">0%</div>
+        </div>
+
+        <footer>
+            <p>Made with ❤️ by 爸爸</p>
+        </footer>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

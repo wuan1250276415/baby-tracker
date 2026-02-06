@@ -1,0 +1,49 @@
+{
+  "weeks": [
+    {
+      "week": 26,
+      "size": "葱",
+      "sizeEmoji": "🥬",
+      "length": "36cm",
+      "development": "眼睛开始睁开",
+      "babyActivity": "我睁开眼睛啦，虽然还看不太清！",
+      "momTips": "可能感到腰酸背痛"
+    },
+    {
+      "week": 27,
+      "size": "花菜",
+      "sizeEmoji": "🥦",
+      "length": "37cm",
+      "development": "大脑快速发育，有规律作息",
+      "babyActivity": "我有自己的作息时间了，会睡觉会醒来！",
+      "momTips": "进入孕晚期"
+    },
+    {
+      "week": 28,
+      "size": "茄子",
+      "sizeEmoji": "🍆",
+      "length": "38cm",
+      "development": "能做梦了，眼睛能眨动",
+      "babyActivity": "我会做梦啦，梦到妈妈的声音！",
+      "momTips": "开始数胎动"
+    },
+    {
+      "week": 29,
+      "size": "南瓜",
+      "sizeEmoji": "🎃",
+      "length": "39cm",
+      "development": "肌肉和肺部继续发育",
+      "babyActivity": "我的肌肉越来越有力气了！",
+      "momTips": "可能出现水肿"
+    },
+    {
+      "week": 30,
+      "size": "卷心菜",
+      "sizeEmoji": "🥬",
+      "length": "40cm",
+      "development": "大脑表面开始出现褶皱",
+      "babyActivity": "我的大脑在变聪明，皱皱的！",
+      "momTips": "注意休息，避免久站"
+    }
+  ]
+}

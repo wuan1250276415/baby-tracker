@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #fff5f5 0%, #fef0f5 50%, #f5f0ff 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 1.8em;
+    color: #e75a7c;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #999;
+    font-size: 0.9em;
+}
+
+/* 倒计时卡片 */
+.countdown-card {
+    background: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(228, 90, 124, 0.3);
+}
+
+.countdown-number {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.countdown-label {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* 宝宝卡片 */
+.baby-card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.week-badge {
+    text-align: center;
+    color: #666;
+    font-size: 1.1em;
+}
+
+.week-number {
+    font-size: 2em;
+    color: #e75a7c;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.size-display {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.size-emoji {
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+.size-text {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.size-length {
+    color: #999;
+    margin-top: 5px;
+}
+
+/* 宝宝说话气泡 */
+.baby-says {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.speech-bubble {
+    background: #fff0f5;
+    border-radius: 15px;
+    padding: 15px;
+    flex: 1;
+    position: relative;
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    right: -8px;
+    bottom: 15px;
+    border: 8px solid transparent;
+    border-left-color: #fff0f5;
+}
+
+.baby-avatar {
+    font-size: 2.5em;
+}
+
+/* 妈妈提示卡片 */
+.mom-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.mom-card h3 {
+    color: #e75a7c;
+    margin-bottom: 10px;
+}
+
+.mom-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 爸爸的话卡片 */
+.love-card {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.love-card h3 {
+    color: #c44569;
+    margin-bottom: 10px;
+}
+
+.love-card p {
+    color: #8b4a5e;
+    line-height: 1.6;
+}
+
+/* 进度条 */
+.progress-section {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.progress-section h3 {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.progress-bar {
+    background: #f0f0f0;
+    border-radius: 10px;
+    height: 12px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background: linear-gradient(90deg, #ff6b9d, #c44569);
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+.progress-text {
+    text-align: center;
+    margin-top: 10px;
+    color: #999;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #ccc;
+}

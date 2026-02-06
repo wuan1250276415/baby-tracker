@@ -1,0 +1,94 @@
+{
+  "weeks": [
+    {
+      "week": 1,
+      "size": "小种子",
+      "sizeEmoji": "🌱",
+      "length": "0.1mm",
+      "development": "受精卵正在分裂，开始了生命的旅程",
+      "babyActivity": "我正在努力分裂细胞，准备着床呢！",
+      "momTips": "可能还不知道怀孕了，保持好心情"
+    },
+    {
+      "week": 2,
+      "size": "小种子",
+      "sizeEmoji": "🌱",
+      "length": "0.2mm",
+      "development": "受精卵着床，开始发育",
+      "babyActivity": "我找到了温暖的小窝，安家啦！",
+      "momTips": "身体可能还没有明显变化"
+    },
+    {
+      "week": 3,
+      "size": "罂粟籽",
+      "sizeEmoji": "⚫",
+      "length": "0.5mm",
+      "development": "胚胎形成三个细胞层",
+      "babyActivity": "我在建造自己的小身体，三层结构哦！",
+      "momTips": "可能会感到轻微疲劳"
+    },
+    {
+      "week": 4,
+      "size": "芝麻粒",
+      "sizeEmoji": "🫘",
+      "length": "1mm",
+      "development": "心脏开始形成，神经管发育",
+      "babyActivity": "我的小心脏开始跳动啦，砰砰砰！",
+      "momTips": "可能出现早孕反应"
+    },
+    {
+      "week": 5,
+      "size": "苹果籽",
+      "sizeEmoji": "🍎",
+      "length": "2mm",
+      "development": "心脏开始跳动，脑部快速发育",
+      "babyActivity": "我的心脏跳得更有力了，大脑也在长大！",
+      "momTips": "可能开始孕吐，多休息"
+    },
+    {
+      "week": 6,
+      "size": "石榴籽",
+      "sizeEmoji": "❤️",
+      "length": "5mm",
+      "development": "眼睛、耳朵开始形成，小尾巴还在",
+      "babyActivity": "我在长眼睛和耳朵，以后要看妈妈听妈妈说话！",
+      "momTips": "孕吐可能加重，少食多餐"
+    },
+    {
+      "week": 7,
+      "size": "蓝莓",
+      "sizeEmoji": "🫐",
+      "length": "1cm",
+      "development": "手脚开始分化，面部特征形成",
+      "babyActivity": "我的小手小脚在长出来啦，像小蹼一样！",
+      "momTips": "可能感到胸部胀痛"
+    },
+    {
+      "week": 8,
+      "size": "树莓",
+      "sizeEmoji": "🍇",
+      "length": "1.6cm",
+      "development": "手指脚趾开始分开，尾巴消失",
+      "babyActivity": "我的手指分开了，可以数到10啦！尾巴也没了～",
+      "momTips": "子宫开始增大，可能尿频"
+    },
+    {
+      "week": 9,
+      "size": "樱桃",
+      "sizeEmoji": "🍒",
+      "length": "2.3cm",
+      "development": "所有器官都已形成，开始快速生长",
+      "babyActivity": "我的器官都长好了，现在要努力长大！",
+      "momTips": "孕吐可能达到高峰，再坚持一下"
+    },
+    {
+      "week": 10,
+      "size": "草莓",
+      "sizeEmoji": "🍓",
+      "length": "3cm",
+      "development": "骨骼开始硬化，能做出吞咽动作",
+      "babyActivity": "我在练习吞咽羊水，为以后喝奶做准备！",
+      "momTips": "孕吐可能开始减轻"
+    }
+  ]
+}

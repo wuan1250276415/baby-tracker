@@ -1,0 +1,94 @@
+{
+  "weeks": [
+    {
+      "week": 11,
+      "size": "无花果",
+      "sizeEmoji": "🫒",
+      "length": "4cm",
+      "development": "头部占身体一半，开始长指甲",
+      "babyActivity": "我的头好大呀，在长小指甲呢！",
+      "momTips": "孕吐逐渐减轻，食欲恢复"
+    },
+    {
+      "week": 12,
+      "size": "青柠",
+      "sizeEmoji": "🍋",
+      "length": "5cm",
+      "development": "反射神经发育，会打嗝了",
+      "babyActivity": "嗝～我学会打嗝了，好好玩！",
+      "momTips": "进入孕中期，最舒适的阶段开始"
+    },
+    {
+      "week": 13,
+      "size": "豌豆荚",
+      "sizeEmoji": "🥒",
+      "length": "7cm",
+      "development": "声带形成，指纹开始出现",
+      "babyActivity": "我有自己独一无二的指纹啦！",
+      "momTips": "可以开始准备孕妇装了"
+    },
+    {
+      "week": 14,
+      "size": "柠檬",
+      "sizeEmoji": "🍋",
+      "length": "9cm",
+      "development": "开始长出细细的胎毛",
+      "babyActivity": "我身上长出软软的毛毛，暖暖的！",
+      "momTips": "精力恢复，可以适当运动"
+    },
+    {
+      "week": 15,
+      "size": "苹果",
+      "sizeEmoji": "🍎",
+      "length": "10cm",
+      "development": "能感知光线，骨骼继续硬化",
+      "babyActivity": "我能感觉到亮亮的光了！",
+      "momTips": "可能感到轻微胎动"
+    },
+    {
+      "week": 16,
+      "size": "牛油果",
+      "sizeEmoji": "🥑",
+      "length": "12cm",
+      "development": "眼睛能左右移动，腿比手长了",
+      "babyActivity": "我的眼睛会转啦，腿也变长了！",
+      "momTips": "可以做唐筛检查了"
+    },
+    {
+      "week": 17,
+      "size": "石榴",
+      "sizeEmoji": "🍎",
+      "length": "13cm",
+      "development": "脂肪开始积累，能听到声音",
+      "babyActivity": "我能听到妈妈的心跳和说话声啦！",
+      "momTips": "多和宝宝说话吧"
+    },
+    {
+      "week": 18,
+      "size": "红薯",
+      "sizeEmoji": "🍠",
+      "length": "14cm",
+      "development": "耳朵发育完成，能听到外界声音",
+      "babyActivity": "外面好热闹呀，我都能听到！",
+      "momTips": "可以开始胎教音乐了"
+    },
+    {
+      "week": 19,
+      "size": "芒果",
+      "sizeEmoji": "🥭",
+      "length": "15cm",
+      "development": "皮肤上形成保护层",
+      "babyActivity": "我穿上了一层保护衣，滑滑的！",
+      "momTips": "可能感到明显胎动了"
+    },
+    {
+      "week": 20,
+      "size": "香蕉",
+      "sizeEmoji": "🍌",
+      "length": "16cm",
+      "development": "孕期过半！能分辨味道了",
+      "babyActivity": "妈妈吃的东西我能尝到味道哦！",
+      "momTips": "恭喜！孕期过半啦"
+    }
+  ]
+}
