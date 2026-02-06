@@ -124,6 +124,61 @@ function refreshLoveQuote() {
     }, 200);
 }
 
+// 胎教音乐推荐数据
+const musicData = {
+    early: {
+        stage: "孕早期（1-12周）：宝宝听觉尚未发育，音乐主要帮助妈妈放松",
+        items: [
+            { icon: "🎹", type: "轻柔钢琴曲", desc: "推荐：德彪西《月光》、肖邦《夜曲》" },
+            { icon: "🌊", type: "自然白噪音", desc: "推荐：海浪声、雨声、溪流声" },
+            { icon: "🧘", type: "冥想音乐", desc: "推荐：瑜伽放松音乐、呼吸引导" }
+        ]
+    },
+    mid: {
+        stage: "孕中期（13-27周）：宝宝开始能听到声音啦！",
+        items: [
+            { icon: "🎻", type: "古典弦乐", desc: "推荐：莫扎特、维瓦尔第《四季》" },
+            { icon: "🎵", type: "儿歌童谣", desc: "推荐：《小星星》《摇篮曲》" },
+            { icon: "🎤", type: "爸爸妈妈的声音", desc: "给宝宝读故事、唱歌效果最好" },
+            { icon: "🎶", type: "轻音乐", desc: "推荐：班得瑞、久石让作品" }
+        ]
+    },
+    late: {
+        stage: "孕晚期（28-40周）：宝宝能记住熟悉的旋律了！",
+        items: [
+            { icon: "🎼", type: "固定曲目重复播放", desc: "每天固定时间播放同一首，出生后有安抚效果" },
+            { icon: "🎹", type: "舒缓古典乐", desc: "推荐：巴赫、舒伯特小夜曲" },
+            { icon: "💤", type: "睡前音乐", desc: "推荐：勃拉姆斯《摇篮曲》" },
+            { icon: "🗣️", type: "亲子对话", desc: "多跟宝宝说话，ta能认出你的声音" }
+        ]
+    }
+};
+
+function initMusicRecommend() {
+    const week = getCurrentWeek();
+    let stage;
+    if (week <= 12) stage = 'early';
+    else if (week <= 27) stage = 'mid';
+    else stage = 'late';
+
+    const data = musicData[stage];
+    document.getElementById('musicStage').textContent = data.stage;
+
+    const list = document.getElementById('musicList');
+    list.innerHTML = '';
+    data.items.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'music-item';
+        div.innerHTML = `
+            <div class="music-icon">${item.icon}</div>
+            <div class="music-info">
+                <div class="music-type">${item.type}</div>
+                <div class="music-desc">${item.desc}</div>
+            </div>`;
+        list.appendChild(div);
+    });
+}
+
 // 孕肚照时间轴
 function initPhotoTimeline() {
     const timeline = document.getElementById('photoTimeline');
@@ -191,5 +246,6 @@ function uploadBellyPhoto(week) {
 document.addEventListener('DOMContentLoaded', function() {
     updateDisplay();
     refreshLoveQuote();
+    initMusicRecommend();
     initPhotoTimeline();
 });
