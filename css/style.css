@@ -196,6 +196,41 @@ header h1 {
     color: #999;
 }
 
+/* 情话盲盒 */
+.love-box-card {
+    background: linear-gradient(135deg, #ffd1dc 0%, #ffb6c1 100%);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0 5px 20px rgba(228, 90, 124, 0.2);
+}
+
+.love-box-card:active {
+    transform: scale(0.97);
+}
+
+.love-box-card h3 {
+    color: #c44569;
+    margin-bottom: 5px;
+}
+
+.love-box-hint {
+    font-size: 0.8em;
+    color: #d4768e;
+    margin-bottom: 10px;
+}
+
+.love-box-quote {
+    color: #8b4a5e;
+    font-size: 1.1em;
+    line-height: 1.6;
+    font-style: italic;
+    transition: opacity 0.2s ease;
+}
+
 footer {
     text-align: center;
     padding: 20px;

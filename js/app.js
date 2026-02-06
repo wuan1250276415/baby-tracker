@@ -89,5 +89,43 @@ function updateDisplay() {
     document.getElementById('progressText').textContent = `${week}/40周 (${progress.toFixed(0)}%)`;
 }
 
+// 情话盲盒数据
+const loveQuotes = [
+    "遇见你之前，我没想过结婚；遇见你之后，我没想过别人。",
+    "你是我这辈子最大的幸运，谢谢你愿意为我们的家付出。",
+    "看着你的肚子一天天大起来，我的心也一天天更满。",
+    "等宝宝出来，我要告诉ta，妈妈是世界上最勇敢的人。",
+    "你辛苦了，但你笑起来的样子，比任何时候都美。",
+    "我会努力成为一个好爸爸，就像你已经是最好的妈妈。",
+    "每次感受到胎动，我都觉得这是世界上最神奇的事。",
+    "谢谢你给了我一个家，一个完整的、温暖的家。",
+    "你不只是我的老婆，你是我生命中最重要的人。",
+    "等宝宝长大了，我要跟ta说，妈妈怀你的时候有多辛苦多伟大。",
+    "我可能不太会说甜言蜜语，但我的心里全是你和宝宝。",
+    "你就安心养胎，其他的事情交给我。",
+    "想到我们三个人的未来，我就充满了力量。",
+    "你是最美的孕妈妈，没有之一。",
+    "我爱你，不只是今天，是每一天。",
+    "宝宝一定很幸福，因为ta有你这样的妈妈。",
+    "等你卸货了，我带你去吃所有你现在馋的东西！",
+    "你的每一次不舒服，我都心疼。希望我能替你分担。",
+    "我们的小家庭就要多一个成员了，好期待！",
+    "老婆大人辛苦了，今晚想吃什么？我去买！"
+];
+
+// 刷新情话盲盒
+function refreshLoveQuote() {
+    const el = document.getElementById('loveBoxQuote');
+    const idx = Math.floor(Math.random() * loveQuotes.length);
+    el.style.opacity = '0';
+    setTimeout(() => {
+        el.textContent = `"${loveQuotes[idx]}"`;
+        el.style.opacity = '1';
+    }, 200);
+}
+
 // 页面加载时执行
-document.addEventListener('DOMContentLoaded', updateDisplay);
+document.addEventListener('DOMContentLoaded', function() {
+    updateDisplay();
+    refreshLoveQuote();
+});
