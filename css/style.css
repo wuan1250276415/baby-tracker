@@ -196,6 +196,72 @@ header h1 {
     color: #999;
 }
 
+/* 产检提醒清单 */
+.checkup-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.checkup-card h3 {
+    color: #e75a7c;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.checkup-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkup-item {
+    padding: 12px 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.checkup-item.done {
+    background: #f0fff0;
+}
+
+.checkup-item.current {
+    background: #fff0f5;
+    border: 1px solid #ffb6c1;
+}
+
+.checkup-item.upcoming {
+    background: #f8f8f8;
+    opacity: 0.7;
+}
+
+.checkup-status {
+    font-size: 1.2em;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.checkup-info {
+    flex: 1;
+}
+
+.checkup-week {
+    font-weight: bold;
+    color: #333;
+    font-size: 0.9em;
+}
+
+.checkup-items {
+    color: #666;
+    font-size: 0.8em;
+    margin-top: 3px;
+    line-height: 1.5;
+}
+
 /* 胎教音乐推荐 */
 .music-card {
     background: white;

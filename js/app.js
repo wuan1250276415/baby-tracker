@@ -124,6 +124,54 @@ function refreshLoveQuote() {
     }, 200);
 }
 
+// 产检提醒清单数据
+const checkupData = [
+    { week: 6, items: "第一次B超，确认宫内孕、胎心胎芽" },
+    { week: 8, items: "建档立卡，血常规、尿常规、肝肾功能" },
+    { week: 12, items: "NT检查（颈项透明层），早期唐筛" },
+    { week: 16, items: "中期唐筛（15-20周），听胎心" },
+    { week: 20, items: "大排畸B超（18-24周），最重要的一次！" },
+    { week: 24, items: "糖耐量测试（OGTT），排除妊娠糖尿病" },
+    { week: 28, items: "乙肝抗体检测，开始每两周产检" },
+    { week: 30, items: "常规产检，胎位检查" },
+    { week: 32, items: "B超评估胎儿发育，胎心监护" },
+    { week: 34, items: "胎心监护，骨盆测量" },
+    { week: 36, items: "GBS筛查，每周产检开始" },
+    { week: 37, items: "足月检查，评估分娩方式" },
+    { week: 38, items: "胎心监护，等待发动" },
+    { week: 39, items: "常规检查，随时准备入院" },
+    { week: 40, items: "预产期到啦，加油！" }
+];
+
+function initCheckupList() {
+    const currentWeek = getCurrentWeek();
+    const list = document.getElementById('checkupList');
+    list.innerHTML = '';
+
+    checkupData.forEach(item => {
+        const div = document.createElement('div');
+        let status, statusIcon;
+        if (item.week < currentWeek) {
+            status = 'done';
+            statusIcon = '✅';
+        } else if (item.week <= currentWeek + 2) {
+            status = 'current';
+            statusIcon = '📋';
+        } else {
+            status = 'upcoming';
+            statusIcon = '⏳';
+        }
+        div.className = `checkup-item ${status}`;
+        div.innerHTML = `
+            <div class="checkup-status">${statusIcon}</div>
+            <div class="checkup-info">
+                <div class="checkup-week">第 ${item.week} 周</div>
+                <div class="checkup-items">${item.items}</div>
+            </div>`;
+        list.appendChild(div);
+    });
+}
+
 // 胎教音乐推荐数据
 const musicData = {
     early: {
@@ -246,6 +294,7 @@ function uploadBellyPhoto(week) {
 document.addEventListener('DOMContentLoaded', function() {
     updateDisplay();
     refreshLoveQuote();
+    initCheckupList();
     initMusicRecommend();
     initPhotoTimeline();
 });
