@@ -89,6 +89,26 @@ function updateDisplay() {
     document.getElementById('progressText').textContent = `${week}/40周 (${progress.toFixed(0)}%)`;
 }
 
+// 深色模式切换
+function initTheme() {
+    const saved = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', saved);
+    updateThemeIcon(saved);
+}
+
+function toggleTheme() {
+    const current = document.documentElement.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    updateThemeIcon(next);
+}
+
+function updateThemeIcon(theme) {
+    const btn = document.getElementById('themeToggle');
+    btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+}
+
 // 宝宝昵称功能
 function initNickname() {
     const saved = localStorage.getItem('babyNickname');
@@ -312,6 +332,7 @@ function uploadBellyPhoto(week) {
 
 // 页面加载时执行
 document.addEventListener('DOMContentLoaded', function() {
+    initTheme();
     initNickname();
     updateDisplay();
     refreshLoveQuote();
