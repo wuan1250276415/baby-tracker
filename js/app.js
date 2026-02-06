@@ -124,8 +124,72 @@ function refreshLoveQuote() {
     }, 200);
 }
 
+// 孕肚照时间轴
+function initPhotoTimeline() {
+    const timeline = document.getElementById('photoTimeline');
+    const currentWeek = getCurrentWeek();
+    const photos = JSON.parse(localStorage.getItem('bellyPhotos') || '{}');
+    
+    timeline.innerHTML = '';
+    // 每4周显示一个节点，加上当前周
+    const milestones = [8, 12, 16, 20, 24, 28, 32, 36, 40];
+    const weeks = milestones.filter(w => w <= currentWeek + 4);
+    
+    weeks.forEach(w => {
+        const item = document.createElement('div');
+        item.className = 'timeline-item';
+        
+        const dot = document.createElement('div');
+        dot.className = 'timeline-dot' + (photos[w] ? '' : ' empty');
+        
+        const weekLabel = document.createElement('div');
+        weekLabel.className = 'timeline-week';
+        weekLabel.textContent = `第 ${w} 周`;
+
+        const photoArea = document.createElement('div');
+        photoArea.className = 'timeline-photo-area';
+
+        if (photos[w]) {
+            const img = document.createElement('img');
+            img.src = photos[w];
+            photoArea.appendChild(img);
+        } else {
+            photoArea.textContent = w <= currentWeek ? '📷 点击上传' : '⏳ 还没到哦';
+        }
+
+        if (w <= currentWeek) {
+            photoArea.onclick = () => uploadBellyPhoto(w);
+        }
+
+        item.appendChild(dot);
+        item.appendChild(weekLabel);
+        item.appendChild(photoArea);
+        timeline.appendChild(item);
+    });
+}
+
+function uploadBellyPhoto(week) {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = 'image/*';
+    input.onchange = (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (ev) => {
+            const photos = JSON.parse(localStorage.getItem('bellyPhotos') || '{}');
+            photos[week] = ev.target.result;
+            localStorage.setItem('bellyPhotos', JSON.stringify(photos));
+            initPhotoTimeline();
+        };
+        reader.readAsDataURL(file);
+    };
+    input.click();
+}
+
 // 页面加载时执行
 document.addEventListener('DOMContentLoaded', function() {
     updateDisplay();
     refreshLoveQuote();
+    initPhotoTimeline();
 });
