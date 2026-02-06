@@ -89,6 +89,26 @@ function updateDisplay() {
     document.getElementById('progressText').textContent = `${week}/40周 (${progress.toFixed(0)}%)`;
 }
 
+// 宝宝昵称功能
+function initNickname() {
+    const saved = localStorage.getItem('babyNickname');
+    if (saved) {
+        document.getElementById('babyNickname').textContent = saved;
+        document.getElementById('nicknameEdit').textContent = `✏️ ${saved}`;
+    }
+}
+
+function editNickname() {
+    const current = localStorage.getItem('babyNickname') || '宝宝';
+    const name = prompt('给宝宝起个昵称吧：', current);
+    if (name && name.trim()) {
+        const nickname = name.trim();
+        localStorage.setItem('babyNickname', nickname);
+        document.getElementById('babyNickname').textContent = nickname;
+        document.getElementById('nicknameEdit').textContent = `✏️ ${nickname}`;
+    }
+}
+
 // 情话盲盒数据
 const loveQuotes = [
     "遇见你之前，我没想过结婚；遇见你之后，我没想过别人。",
@@ -292,6 +312,7 @@ function uploadBellyPhoto(week) {
 
 // 页面加载时执行
 document.addEventListener('DOMContentLoaded', function() {
+    initNickname();
     updateDisplay();
     refreshLoveQuote();
     initCheckupList();
